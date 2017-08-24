@@ -1,5 +1,32 @@
 {
-  "data": {
-    "type": "facts"
-  }
+  "health": [
+    {
+      "id": 1,
+      "value": "Health-1"
+    },
+    {
+      "id": 2,
+      "value": "Health-2"
+    }
+  ],
+  "environment": [
+    {
+      "id": 1,
+      "value": "Environment-1"
+    },
+    {
+      "id": 2,
+      "value": "Environment-2"
+    }
+  ],
+  "ethics": [
+    {
+      "id": 1,
+      "value": "Ethics-1"
+    },
+    {
+      "id": 2,
+      "value": "Ethics-2"
+    }
+  ]
 }
