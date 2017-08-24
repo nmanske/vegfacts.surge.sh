@@ -10,7 +10,7 @@ $(document).ready(function() {
   function displayFact(type) {
     var factBox = $('#factBox');
 
-    $.getJSON('./static/data/data.json', function(data) {
+    $.getJSON('./static/data/facts.json', function(data) {
       var category;
       if (type == 'Health') {
         category = data.health;
@@ -20,15 +20,20 @@ $(document).ready(function() {
         category = data.ethics;
       }
 
-      var items = category.map(function(item) {
-        return item.id + ': ' + item.value;
+      var facts = category.map(function(fact) {
+        item = 'id: ' + fact.id + ' ///// description: ' + fact.description;
+        var sources = fact.source.map(function(source) {
+          item += ' ///// source name: ' + source.name + ' ///// source url: ' + source.url;
+        });
+        return item;
       });
 
-      var fact = items[Math.floor(Math.random() * items.length)];
+      var chosen = facts[Math.floor(Math.random() * facts.length)];
+
       factBox.empty();
 
-      if (items.length) {
-        var content = '<li>' + fact + '</li>';
+      if (facts.length) {
+        var content = '<li>' + chosen + '</li>';
         var list = $('<ul />').html(content);
         factBox.append(list);
       }

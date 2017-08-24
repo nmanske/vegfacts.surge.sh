@@ -1,0 +1,59 @@
+{
+  "health": [{
+      "id": 1,
+      "description": "Health-1",
+      "source": [{
+          "id": 1,
+          "name": "Health-Source-1",
+          "url": "http://health-source-1.test"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "description": "Health-2",
+      "source": [{
+          "id": 1,
+          "name": "Health-Source-2",
+          "url": "http://health-source-2.test"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "description": "Health-3",
+      "source": [{
+          "id": 1,
+          "name": "Health-Source-3",
+          "url": "http://health-source-3.test"
+        }
+      ]
+    }
+  ],
+  "environment": [{
+      "id": 1,
+      "description": "Environment-1"
+    },
+    {
+      "id": 2,
+      "description": "Environment-2"
+    },
+    {
+      "id": 3,
+      "description": "Environment-3"
+    }
+  ],
+  "ethics": [{
+      "id": 1,
+      "description": "Ethics-1"
+    },
+    {
+      "id": 2,
+      "description": "Ethics-2"
+    },
+    {
+      "id": 3,
+      "description": "Ethics-3"
+    }
+  ]
+}
