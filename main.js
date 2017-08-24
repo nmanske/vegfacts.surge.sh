@@ -7,15 +7,22 @@ $(document).ready(function() {
     }
   }
 
-  function displayFact(fact) {
-    $("#fact").text(fact);
-  }
-
-  $("#health-btn").click(function() {
+  function displayFact(type) {
     var factBox = $('#factBox');
 
     $.getJSON('./static/data/data.json', function(data) {
-      var items = data.health.map(function(item) {
+      var category;
+      if (type == 'Health') {
+        category = data.health;
+      }
+      else if (type == 'Environment') {
+        category = data.environment;
+      }
+      else if (type == 'Ethics') {
+        category = data.ethics;
+      }
+
+      var items = category.map(function(item) {
         return item.id + ': ' + item.value;
       });
 
@@ -28,14 +35,18 @@ $(document).ready(function() {
         factBox.append(list);
       }
     });
+  }
+
+  $('#health-btn').click(function() {
+    displayFact('Health');
   });
 
-  $("#environment-btn").click(function() {
-
+  $('#environment-btn').click(function() {
+    displayFact('Environment');
   });
 
-  $("#ethics-btn").click(function() {
-
+  $('#ethics-btn').click(function() {
+    displayFact('Ethics');
   });
 
 });

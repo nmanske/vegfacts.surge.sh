@@ -7,6 +7,10 @@
     {
       "id": 2,
       "value": "Health-2"
+    },
+    {
+      "id": 3,
+      "value": "Health-3"
     }
   ],
   "environment": [
@@ -17,6 +21,10 @@
     {
       "id": 2,
       "value": "Environment-2"
+    },
+    {
+      "id": 3,
+      "value": "Environment-3"
     }
   ],
   "ethics": [
@@ -27,6 +35,10 @@
     {
       "id": 2,
       "value": "Ethics-2"
+    },
+    {
+      "id": 3,
+      "value": "Ethics-3"
     }
   ]
 }
