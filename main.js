@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  function shuffle(a) {
+  function getRandomElement(a) {
     for (let i = a.length; i; i--) {
       let j = Math.floor(Math.random() * i);
       [a[i - 1], a[j]] = [a[j], a[i - 1]];
@@ -14,11 +14,9 @@ $(document).ready(function() {
       var category;
       if (type == 'Health') {
         category = data.health;
-      }
-      else if (type == 'Environment') {
+      } else if (type == 'Environment') {
         category = data.environment;
-      }
-      else if (type == 'Ethics') {
+      } else if (type == 'Ethics') {
         category = data.ethics;
       }
 
@@ -26,11 +24,11 @@ $(document).ready(function() {
         return item.id + ': ' + item.value;
       });
 
-      shuffle(items);
+      var fact = items[Math.floor(Math.random() * items.length)];
       factBox.empty();
 
       if (items.length) {
-        var content = '<li>' + items.join('</li><li>') + '</li>';
+        var content = '<li>' + fact + '</li>';
         var list = $('<ul />').html(content);
         factBox.append(list);
       }
