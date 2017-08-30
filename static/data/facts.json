@@ -1,59 +1,101 @@
 {
   "health": [{
       "id": 1,
-      "description": "Health-1",
+      "description": "The World Health Organiziation classifies bacon and sausage as carcinogenic to humans",
       "source": [{
           "id": 1,
-          "name": "Health-Source-1",
-          "url": "http://health-source-1.test"
+          "name": "NPR",
+          "url": "http://npr.org/sections/thesalt/2015/10/26/451211964/bad-day-for-bacon-processed-red-meats-cause-cancer-says-who"
         }
       ]
     },
     {
       "id": 2,
-      "description": "Health-2",
+      "description": "Dairy can increase the risk of prostate cancer by 34%",
       "source": [{
           "id": 1,
-          "name": "Health-Source-2",
-          "url": "http://health-source-2.test"
+          "name": "PCRM",
+          "url": "http://pcrm.org/health/health-topics/milk-and-prostate-cancer-the-evidence-mounts"
         }
       ]
     },
     {
       "id": 3,
-      "description": "Health-3",
+      "description": "93% of dioxin exposure comes from eating meat and dairy products",
       "source": [{
           "id": 1,
-          "name": "Health-Source-3",
-          "url": "http://health-source-3.test"
+          "name": "EJnet",
+          "url": "http://ejnet.org/dioxin"
         }
       ]
     }
   ],
   "environment": [{
       "id": 1,
-      "description": "Environment-1"
+      "description": "Animal agriculture is the world's single greatest contributor to wildlife habitat destruction, species extinction, and ocean dead zones",
+      "source": [{
+          "id": 1,
+          "name": "YVFI",
+          "url": "http://yourveganfallacyis.com/en/being-non-vegan-environmentalist-is-enough/resources"
+        }
+      ]
     },
     {
       "id": 2,
-      "description": "Environment-2"
+      "description": "While fracking consumes as much as 140 billion gallons of fresh water annually in the United States, the farming of animals uses at least 34
+                      trillion gallons of fresh water annually",
+      "source": [{
+          "id": 1,
+          "name": "YVFI",
+          "url": "http://yourveganfallacyis.com/en/being-non-vegan-environmentalist-is-enough/resources"
+        }
+      ]
     },
     {
       "id": 3,
-      "description": "Environment-3"
+      "description": "Between 18% and 51% of all greenhouse gas emissions are directly attributable to livestock respoiration, methane, production of animal products,
+                      and other relatable sources, compared to 13% from every form of transportation on the planet combined",
+      "source": [{
+          "id": 1,
+          "name": "YVFI",
+          "url": "http://yourveganfallacyis.com/en/being-non-vegan-environmentalist-is-enough/resources"
+        }
+      ]
     }
   ],
   "ethics": [{
       "id": 1,
-      "description": "Ethics-1"
+      "description": "The accumulation of chicken waste in factory farms commonly result in ammonia levels that cause painful burns to the birds' skin, eyes,
+                      and respiratory tracts",
+      "source": [{
+          "id": 1,
+          "name": "Vegan Outreach",
+          "url": "https://veganoutreach.org/modernfarms/#chickenMeat"
+        }
+      ]
     },
     {
       "id": 2,
-      "description": "Ethics-2"
+      "description": "Animals are routinely exposed to extreme temperatures during the trip to the slaughterhouse. Mammals must stand in a slurry of urine, feces, and
+                      vomit; those who fall and can’t get up may be trampled or suffocate. Approximately 200,000 pigs die on their way to slaughter every year in the
+                      United States",
+      "source": [{
+          "id": 1,
+          "name": "Vegan Outreach",
+          "url": "https://veganoutreach.org/modernfarms/#transport"
+        }
+      ]
     },
     {
       "id": 3,
-      "description": "Ethics-3"
+      "description": "Over 95 percent of U.S. land animals killed for food are birds, yet they are exempt from the federal Humane Methods of Slaughter Act and there is
+                      no federal law requiring they be handled humanely",
+      "source": [{
+          "id": 1,
+          "name": "Vegan Outreach",
+          "url": "https://veganoutreach.org/modernfarms/#bird"
+        }
+      ]
     }
   ]
 }
