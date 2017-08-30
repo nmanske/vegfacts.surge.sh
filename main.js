@@ -8,30 +8,17 @@ $(document).ready(function() {
   }
 
   function displayFact(type) {
-    let factBox = $('#factBox');
 
     $.getJSON('./static/data/facts.json', function(data) {
-      let category = (type == 'Health') ? data.health :
-        (type == 'Environment') ? data.environment :
-        data.ethics;
+      let chosen = data[Math.floor(Math.random()*data.length)];
 
-      let facts = category.map(function(fact) {
-        let item = {
-          'content': fact.description
-        };
-        let sources = fact.source.map(function(source) {
-          item['source'] = source.name;
-          item['url'] = source.url;
-        });
-        return item;
-      });
+      let fact = (type == 'Health') ? data.health[Math.floor(Math.random()*data.health.length)] :
+        (type == 'Environment') ? data.environment[Math.floor(Math.random()*data.environment.length)] :
+        data.ethics[Math.floor(Math.random()*data.ethics.length)];
 
-      let chosen = facts[Math.floor(Math.random() * facts.length)];
-
-      factBox.empty();
-
-      let content = chosen['content'] + '<br>Source: <a href="' + chosen['url'] + '">' + chosen['source'] + '</a>';
-      factBox.append(content);
+      let content = fact.description + '<br>Source: <a href="' + fact.url + '">' + fact.source + '</a>';
+      $('#factBox').empty();
+      $('#factBox').append(content);
     });
   }
 
