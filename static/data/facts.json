@@ -42,8 +42,7 @@
     },
     {
       "id": 2,
-      "description": "While fracking consumes as much as 140 billion gallons of fresh water annually in the United States, the farming of animals uses at least 34
-                      trillion gallons of fresh water annually",
+      "description": "While fracking consumes as much as 140 billion gallons of fresh water annually in the United States, the farming of animals uses at least 34 trillion gallons of fresh water annually",
       "source": [{
           "id": 1,
           "name": "YVFI",
@@ -53,8 +52,7 @@
     },
     {
       "id": 3,
-      "description": "Between 18% and 51% of all greenhouse gas emissions are directly attributable to livestock respoiration, methane, production of animal products,
-                      and other relatable sources, compared to 13% from every form of transportation on the planet combined",
+      "description": "Between 18% and 51% of all greenhouse gas emissions are directly attributable to livestock respoiration, methane, production of animal products, and other relatable sources, compared to 13% from every form of transportation on the planet combined",
       "source": [{
           "id": 1,
           "name": "YVFI",
@@ -65,8 +63,7 @@
   ],
   "ethics": [{
       "id": 1,
-      "description": "The accumulation of chicken waste in factory farms commonly result in ammonia levels that cause painful burns to the birds' skin, eyes,
-                      and respiratory tracts",
+      "description": "The accumulation of chicken waste in factory farms commonly result in ammonia levels that cause painful burns to the birds' skin, eyes, and respiratory tracts",
       "source": [{
           "id": 1,
           "name": "Vegan Outreach",
@@ -76,9 +73,7 @@
     },
     {
       "id": 2,
-      "description": "Animals are routinely exposed to extreme temperatures during the trip to the slaughterhouse. Mammals must stand in a slurry of urine, feces, and
-                      vomit; those who fall and can’t get up may be trampled or suffocate. Approximately 200,000 pigs die on their way to slaughter every year in the
-                      United States",
+      "description": "Animals are routinely exposed to extreme temperatures during the trip to the slaughterhouse. Mammals must stand in a slurry of urine, feces, and vomit; those who fall and can’t get up may be trampled or suffocate. Approximately 200,000 pigs die on their way to slaughter every year in the United States",
       "source": [{
           "id": 1,
           "name": "Vegan Outreach",
@@ -88,8 +83,7 @@
     },
     {
       "id": 3,
-      "description": "Over 95 percent of U.S. land animals killed for food are birds, yet they are exempt from the federal Humane Methods of Slaughter Act and there is
-                      no federal law requiring they be handled humanely",
+      "description": "Over 95 percent of U.S. land animals killed for food are birds, yet they are exempt from the federal Humane Methods of Slaughter Act and there is no federal law requiring they be handled humanely",
       "source": [{
           "id": 1,
           "name": "Vegan Outreach",
