@@ -8,35 +8,30 @@ $(document).ready(function() {
   }
 
   function displayFact(type) {
-    var factBox = $('#factBox');
+    let factBox = $('#factBox');
 
     $.getJSON('./static/data/facts.json', function(data) {
-      var category;
-      if (type == 'Health') {
-        category = data.health;
-      } else if (type == 'Environment') {
-        category = data.environment;
-      } else if (type == 'Ethics') {
-        category = data.ethics;
-      }
+      let category = (type == 'Health') ? data.health :
+        (type == 'Environment') ? data.environment :
+        data.ethics;
 
-      var facts = category.map(function(fact) {
-        item = 'id: ' + fact.id + ' ///// description: ' + fact.description;
-        var sources = fact.source.map(function(source) {
-          item += ' ///// source name: ' + source.name + ' ///// source url: ' + source.url;
+      let facts = category.map(function(fact) {
+        let item = {
+          'content': fact.description
+        };
+        let sources = fact.source.map(function(source) {
+          item['source'] = source.name;
+          item['url'] = source.url;
         });
         return item;
       });
 
-      var chosen = facts[Math.floor(Math.random() * facts.length)];
+      let chosen = facts[Math.floor(Math.random() * facts.length)];
 
       factBox.empty();
 
-      if (facts.length) {
-        var content = '<li>' + chosen + '</li>';
-        var list = $('<ul />').html(content);
-        factBox.append(list);
-      }
+      let content = chosen['content'] + '<br>Source: <a href="' + chosen['url'] + '">' + chosen['source'] + '</a>';
+      factBox.append(content);
     });
   }
 
