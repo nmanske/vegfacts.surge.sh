@@ -9,7 +9,7 @@ $(document).ready(function() {
 
       let fact = category[Math.floor(Math.random() * category.length)]
 
-      let content = '<br>' + fact.description + '<br>';
+      let content = '<br>' + fact.description + '<br>'
       for (let i = 0; i < fact.source.length; i++)
         content += '<br>Source: <a href="' + fact.source[i].url + '">' + fact.source[i].name + '</a>'
 
